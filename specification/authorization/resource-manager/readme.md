@@ -26,7 +26,7 @@ These are the global settings for the Authorization API.
 
 ``` yaml
 openapi-type: arm
-tag: package-2018-09-01-preview
+tag: package-2018-07-01
 ```
 
 ## Suppression
@@ -161,6 +161,19 @@ input-file:
 - Microsoft.Authorization/preview/2018-09-01-preview/authorization-RoleAssignmentsCalls.json
 - Microsoft.Authorization/preview/2018-01-01-preview/authorization-RoleDefinitionsCalls.json
 - Microsoft.Authorization/preview/2018-07-01-preview/authorization-DenyAssignmentGetCalls.json
+```
+
+### Tag: package-2018-07-01
+
+These settings apply only when `--tag=package-2018-07-01` is specified on the command line.
+
+``` yaml $(tag) == 'package-2018-07-01'
+input-file:
+- Microsoft.Authorization/preview/2015-06-01/authorization-ClassicAdminCalls.json
+- Microsoft.Authorization/preview/2018-01-01-preview/authorization-ProviderOperationsCalls.json
+- Microsoft.Authorization/preview/2018-09-01-preview/authorization-RoleAssignmentsCalls.json
+- Microsoft.Authorization/preview/2018-01-01-preview/authorization-RoleDefinitionsCalls.json
+- Microsoft.Authorization/stable/2018-07-01/authorization-DenyAssignmentGetCalls.json
 ```
 
 ---
